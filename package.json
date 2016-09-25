@@ -10,7 +10,9 @@
     "url": "git+https://github.com/dan-nl/create-license.git"
   },
   "keywords": [
-    "create-license"
+    "tags",
+    "template tag replacement",
+    "templates"
   ],
   "bugs": {
     "url": "https://github.com/dan-nl/create-license/issues"
