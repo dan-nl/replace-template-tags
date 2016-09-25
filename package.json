@@ -1,0 +1,39 @@
+{
+  "name": "replace-template-tags",
+  "version": "0.0.0",
+  "description": "simple template tag replacement",
+  "author": "dan entous",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dan-nl/create-license.git"
+  },
+  "keywords": [
+    "create-license"
+  ],
+  "bugs": {
+    "url": "https://github.com/dan-nl/create-license/issues"
+  },
+  "homepage": "https://github.com/dan-nl/create-license#readme",
+  "scripts": {
+    "pre-commit": "echo 'pre-commit checks ...' && npm run eslint && npm test -- --cov",
+    "cover:browser": "npm test -- --coverage-report=lcov",
+    "cover:cli": "npm test -- --cov",
+    "cover:travis": "npm test -- --coverage-report=lcov --no-browser",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "eslint": "eslint .",
+    "test": "tap test/**/*.test.js --reporter spec"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run pre-commit"
+    }
+  },
+  "devDependencies": {
+    "eslint": "3.6.0",
+    "eslint-config-dan-nl": "git://github.com/dan-nl/eslint-config-dan-nl.git#060da86bd715741fbcf71a367ecb05a037d4fb51",
+    "ghooks": "1.3.2",
+    "tap": "7.1.2"
+  }
+}
