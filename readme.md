@@ -58,7 +58,7 @@ result = replaceTemplateTags( template, tags );
 [mit-license]: https://raw.githubusercontent.com/dan-nl/replace-template-tags/master/license.txt
 [npm-image]: https://img.shields.io/npm/v/replace-template-tags.svg
 [npm-url]: https://www.npmjs.com/package/replace-template-tags
-[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/02ccf522-5faf-4ee6-a1ca-5a572e3b8230/badge
-[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/02ccf522-5faf-4ee6-a1ca-5a572e3b8230
+[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/6b2c111e-72e1-47ee-81c1-ba350c9c2cc3/badge
+[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/6b2c111e-72e1-47ee-81c1-ba350c9c2cc3
 [travis-image]: https://travis-ci.org/dan-nl/replace-template-tags.svg?branch=master
 [travis-url]: https://travis-ci.org/dan-nl/replace-template-tags
