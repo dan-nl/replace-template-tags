@@ -1,6 +1,6 @@
 {
   "name": "replace-template-tags",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "simple template tag replacement",
   "author": "dan entous",
   "license": "MIT",
