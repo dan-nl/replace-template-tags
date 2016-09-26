@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * replaces each template tag in the content provided
+ * simple template tag replacement
  *
- * @param {string} content
+ * @param {string} template
  *
  * @param {Array} tags
  * @param {RegExp} tags.exp
@@ -11,12 +11,12 @@
  *
  * @returns {string}
  */
-function replaceTemplateTags( content, tags ) {
+function replaceTemplateTags( template, tags ) {
   return tags.reduce(
     function ( accumulator, tag ) {
       return accumulator.replace( tag.exp, tag.value );
     },
-    content
+    template
   );
 }
 

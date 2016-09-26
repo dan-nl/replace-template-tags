@@ -7,7 +7,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dan-nl/create-license.git"
+    "url": "git+https://github.com/dan-nl/replace-template-tags.git"
   },
   "keywords": [
     "tags",
@@ -15,9 +15,9 @@
     "templates"
   ],
   "bugs": {
-    "url": "https://github.com/dan-nl/create-license/issues"
+    "url": "https://github.com/dan-nl/replace-template-tags/issues"
   },
-  "homepage": "https://github.com/dan-nl/create-license#readme",
+  "homepage": "https://github.com/dan-nl/replace-template-tags#readme",
   "scripts": {
     "pre-commit": "echo 'pre-commit checks ...' && npm run eslint && npm test -- --cov",
     "cover:browser": "npm test -- --coverage-report=lcov",
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "eslint": "3.6.0",
-    "eslint-config-dan-nl": "git://github.com/dan-nl/eslint-config-dan-nl.git#060da86bd715741fbcf71a367ecb05a037d4fb51",
+    "eslint-config-dan-nl": "git://github.com/dan-nl/eslint-config-dan-nl.git",
     "ghooks": "1.3.2",
     "tap": "7.1.2"
   }
