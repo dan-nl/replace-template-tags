@@ -3,7 +3,7 @@
 /**
  * simple template tag replacement
  *
- * @param {string} template
+ * @param {string|Buffer} template
  *
  * @param {Array} tags
  * @param {RegExp} tags.exp
@@ -16,7 +16,7 @@ function replaceTemplateTags( template, tags ) {
     function ( accumulator, tag ) {
       return accumulator.replace( tag.exp, tag.value );
     },
-    template
+    template.toString()
   );
 }
 

@@ -1,16 +1,18 @@
+/* eslint no-sync: off */
+
 'use strict';
 
 /**
  * module dependencies
  */
+var fs = require( 'fs' );
 var replaceTemplateTags = require( '../src' );
 var test = require( 'tap' ).test;
 
 test( 'replaceTemplateTags( template, tags )', function ( t ) {
-  var expected = 'simple template tag replacement for your awesome project; ' +
-    'so create something awesome!';
-  var template = 'simple {function} for your {project} project; ' +
-    'so create something {project}!';
+  var expected =
+    'simple template tag replacement for your awesome project; create something awesome!';
+  var template = fs.readFileSync( './test/fixtures/template.txt' );
   var result;
   var tags = [
     {

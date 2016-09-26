@@ -1,8 +1,7 @@
 # replace-template-tags
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][david-dm-image]][david-dm-url] [![Dev Dependency Status][david-dm-dev-image]][david-dm-dev-url] [![NSP Status][nsp-image]][nsp-url]
 
-simple template tag replacement
-allows you to specify a regex and to use for each replacement
+simple template tag replacement; allows you to specify a regex and value to use for each replacement
 
 ## table of contents
 * [installation](#installation)
@@ -19,7 +18,7 @@ npm install replace-template-tags
 ## use
 ### replaceTemplateTags( template, tags )
 ```javascript
-@param {string} template
+@param {string|Buffer} template
 
 @param {Array} tags
 @param {RegExp} tags.exp
@@ -31,7 +30,7 @@ npm install replace-template-tags
 ### basic
 ```javascript
 var replaceTemplateTags = require( 'replace-template-tags' );
-var template = 'simple {function} for your {project} project; so create something {project}!';
+var template = 'simple {function} for your {project} project; create something {project}!';
 var tags = [
   {
     exp: /\{function}/g,
@@ -44,7 +43,7 @@ var tags = [
 ];
 
 result = replaceTemplateTags( template, tags );
-// => simple template tag replacement for your awesome project; so create something awesome!
+// => simple template tag replacement for your awesome project; create something awesome!
 ```
 
 ## license
